@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Demonstration - Controller</title>
+</head>
+<body>
+
+    <header>
+        <h1>Controller Component</h1>
+        <hr>
+        <nav>
+            <strong>Navigation:</strong> 
+            <a href="index.html">Home</a> | 
+            <a href="model.html">Model Page</a> | 
+            <a href="view.html">View Page</a> | 
+            <a href="controller.html">Controller Page</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>What is the Controller?</h2>
+        <p>
+            The <strong>Controller</strong> acts as the brains or the intermediary bridge between the Model and the View. 
+            It intercepts incoming inputs and requests sent from a user interacting with the View, processes or reformats 
+            that input, commands the Model to manipulate information accordingly, and instructs the View to update its 
+            presentation layer.
+        </p>
+
+        <h3>Responsibilities of the Controller</h3>
+        <ul>
+            <li>Interpreting mouse clicks, keystrokes, and submitted form inputs from the user interface.</li>
+            <li>Routing web requests (handling page links and URLs).</li>
+            <li>Calling upon specific functions within the Model to pull or append raw information.</li>
+            <li>Selecting the correct View layout template to return back to the user's browser.</li>
+        </ul>
+
+        <h3>User Request Processing Workflow</h3>
+        <p>The step-by-step lifecycle of an execution request in MVC occurs in the following procedural order:</p>
+        
+        
+        
+        <ol>
+            <li><strong>User Interaction (View):</strong> A customer visits the webpage and fills out an input field (e.g., searches for a book) and hits "Submit".</li>
+            <li><strong>Intercept Request (Controller):</strong> The Controller catches this action and parses the submitted search keywords.</li>
+            <li><strong>Update/Fetch Data (Model):</strong> The Controller commands the Model to query the system for matching items.</li>
+            <li><strong>Process Result (Model):</strong> The Model searches the underlying database, retrieves the raw results, and hands them back to the Controller.</li>
+            <li><strong>Deliver Response (Controller -> View):</strong> The Controller injects this raw data bundle into the designated View template.</li>
+            <li><strong>Render Screen:</strong> The View translates the data into an organized webpage layout for the user to read.</li>
+        </ol>
+    </main>
+
+    <footer>
+        <hr>
+        <p align="center">&copy; 2026 MVC Concept Demo. Built with HTML Only.</p>
+    </footer>
+
+</body>
+</html>

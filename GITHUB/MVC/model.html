@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Demonstration - Model</title>
+</head>
+<body>
+
+    <header>
+        <h1>Model Component</h1>
+        <hr>
+        <nav>
+            <strong>Navigation:</strong> 
+            <a href="index.html">Home</a> | 
+            <a href="model.html">Model Page</a> | 
+            <a href="view.html">View Page</a> | 
+            <a href="controller.html">Controller Page</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>What is the Model?</h2>
+        <p>
+            The <strong>Model</strong> represents the application's data structure and core business logic. 
+            It is directly responsible for managing the data, rules, and logic of the application. It receives data inputs 
+            from the Controller and responds to instructions to update or fetch information, completely independent of how that 
+            data will eventually look on the screen.
+        </p>
+
+        <h3>Responsibilities of the Model</h3>
+        <ol>
+            <li>Managing the state of the application.</li>
+            <li>Enforcing business logic, rules, and data validation.</li>
+            <li>Interacting with databases (performing CRUD operations: Create, Read, Update, Delete).</li>
+            <li>Notifying the system or Controller when its data state changes.</li>
+        </ol>
+
+        <h3>Examples of Data Managed by the Model</h3>
+        <p>In a standard web application (like an E-Commerce store), the Model manages structural data fields such as:</p>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr bgcolor="#e0e0e0">
+                    <th>Data Asset</th>
+                    <th>Data Type / Examples</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>User Credentials</strong></td>
+                    <td>Username, Encrypted Password, Email</td>
+                    <td>Saves registration details and verifies security log-ins.</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Inventory</strong></td>
+                    <td>Product ID, Price, Stock Quantity, SKU</td>
+                    <td>Tracks catalog availability and item attributes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Order Details</strong></td>
+                    <td>Transaction ID, Timestamp, Total Price</td>
+                    <td>Logs commercial history and tracks order statuses.</td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Profile</strong></td>
+                    <td>Shipping Address, Phone Number</td>
+                    <td>Stores individual client identification details.</td>
+                </tr>
+                <tr>
+                    <td><strong>Shopping Cart State</strong></td>
+                    <td>List of Item IDs, Temporary Session Data</td>
+                    <td>Holds active user choices before a final checkout occurs.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <hr>
+        <p align="center">&copy; 2026 MVC Concept Demo. Built with HTML Only.</p>
+    </footer>
+
+</body>
+</html>
