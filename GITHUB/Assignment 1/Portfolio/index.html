@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pravallika Shivani's Personal Portfolio</title>
+    <!-- Modern Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <hr>
-        <h1 align="center">Pravallika Shivani Penumatsa</h1>
-        <p align="center">
+        <h1>Pravallika Shivani Penumatsa</h1>
+        <p>
             <strong>Student ID:</strong> 2024093597 | 
             <strong>Course:</strong> Web Application Frameworks<br>
             <strong>Department:</strong> Computer Science and Engineering | 
             <strong>University:</strong> GITAM University
         </p>
-        <hr>
     </header>
 
     <main>
@@ -38,9 +44,9 @@
 
         <section id="education">
             <h2>Educational Qualifications</h2>
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table>
                 <thead>
-                    <tr bgcolor="#e0e0e0">
+                    <tr>
                         <th>Qualification</th>
                         <th>Institution</th>
                         <th>Year</th>
@@ -95,40 +101,46 @@
         <section id="academic-subjects">
             <h2>Academic Subjects</h2>
             <dl>
-                <dt><strong>Web Application Frameworks</strong></dt>
+                <dt>Web Application Frameworks</dt>
                 <dd>The study of client-side and server-side technologies required to build standard-compliant, interactive web applications.</dd>
                 
-                <dt><strong>Database Management Systems</strong></dt>
+                <dt>Database Management Systems</dt>
                 <dd>Understanding data models, relational algebra, SQL queries, normalization, and transaction management concepts.</dd>
                 
-                <dt><strong>Data Structures and algorithms</strong></dt>
+                <dt>Data Structures and Algorithms</dt>
                 <dd>Analyzing and implementing core data organizations like trees, graphs, stacks, queues, and related algorithms.</dd>
                 
-                <dt><strong>Operating Systems</strong></dt>
+                <dt>Operating Systems</dt>
                 <dd>Learning the fundamental concepts of process management, memory allocation, file systems, and system security.</dd>
             </dl>
         </section>
 
-        <section id="projects (ongoining)">
+        <section id="projects">
             <h2>Projects</h2>
             
-            <h3>1. E-Commerce Bookstore</h3>
-            <p><strong>Description:</strong> A fully responsive online bookstore platform that allows users to browse books, manage a shopping cart, and place mock orders securely.</p>
-            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, and Node.js</p>
+            <div class="project-card">
+                <h3>1. E-Commerce Bookstore</h3>
+                <p><strong>Description:</strong> A fully responsive online bookstore platform that allows users to browse books, manage a shopping cart, and place mock orders securely.</p>
+                <p><strong>Technologies Used:</strong> <code>HTML</code> <code>CSS</code> <code>JavaScript</code> <code>Node.js</code></p>
+            </div>
             
-            <h3>2. Student Attendance Tracker</h3>
-            <p><strong>Description:</strong> A desktop-based application designed for educational institutions to securely log, calculate, and report student daily attendance percentages.</p>
-            <p><strong>Technologies Used:</strong> Java, Swing, and MySQL</p>
+            <div class="project-card">
+                <h3>2. Student Attendance Tracker</h3>
+                <p><strong>Description:</strong> A desktop-based application designed for educational institutions to securely log, calculate, and report student daily attendance percentages.</p>
+                <p><strong>Technologies Used:</strong> <code>Java</code> <code>Swing</code> <code>MySQL</code></p>
+            </div>
             
-            <h3>3. Automated Weather Dashboard</h3>
-            <p><strong>Description:</strong> A web application that fetches real-time climate statistics and 5-day forecasts for any globally searched city via an external REST API.</p>
-            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, and OpenWeatherMap API</p>
+            <div class="project-card">
+                <h3>3. Automated Weather Dashboard</h3>
+                <p><strong>Description:</strong> A web application that fetches real-time climate statistics and 5-day forecasts for any globally searched city via an external REST API.</p>
+                <p><strong>Technologies Used:</strong> <code>HTML</code> <code>CSS</code> <code>JavaScript</code> <code>OpenWeatherMap API</code></p>
+            </div>
         </section>
 
         <section id="achievements">
             <h2>Achievements</h2>
             <ul>
-                <li><strong>Certifications:</strong> Smart India Hackathon 2025 (internal)</li>
+                <li><strong>Certifications:</strong> Smart India Hackathon 2025 (Internal)</li>
                 <li><strong>Internships:</strong> Web Developer Intern at TechSolutions Corp (Summer 2025)</li>
             </ul>
         </section>
@@ -150,74 +162,63 @@
 
         <section id="useful-links">
             <h2>Useful Links</h2>
-            <p>
-                • <a href="https://github.com/pravallika-shivani" target="_blank">GitHub Profile</a> <br>
-                • <a href="https://www.linkedin.com/in/pravallika-shivani" target="_blank">LinkedIn Profile</a> <br>
-                • <a href="mailto:pravallikashivani527@email.com">Email Me ( pravallikashivani527@email.com)</a>
-            </p>
+            <div class="links-container">
+                <a href="https://github.com/pravallika-shivani" target="_blank" class="btn">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/pravallika-shivani" target="_blank" class="btn">LinkedIn Profile</a>
+                <a href="mailto:pravallikashivani527@email.com" class="btn">Email Me</a>
+            </div>
         </section>
 
-       <section id="contact-form">
+        <section id="contact-form">
             <h2>Contact Form</h2>
             <form action="#" method="post">
-                <table border="0" cellpadding="5">
-                    <tr>
-                        <td><label for="fullname">Full Name:</label></td>
-                        <td><input type="text" id="fullname" name="fullname" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email:</label></td>
-                        <td><input type="email" id="email" name="email" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="phone">Phone Number:</label></td>
-                        <td><input type="tel" id="phone" name="phone" required></td>
-                    </tr>
-                    <tr>
-                        <td><label>Gender:</label></td>
-                        <td>
-                            <input type="radio" id="male" name="gender" value="male" checked>
-                            <label for="male">Male</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="female">Female</label>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label for="other">Other</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="dept">Department:</label></td>
-                        <td>
-                            <select id="dept" name="department">
-                                <option value="cse">Computer Science & Engineering</option>
-                                <option value="ece">Electronics & Communication</option>
-                                <option value="it">Information Technology</option>
-                                <option value="me">Mechanical Engineering</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="dob">Date of Birth:</label></td>
-                        <td><input type="date" id="dob" name="dob" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="message">Message:</label></td>
-                        <td><textarea id="message" name="message" rows="4" cols="30" placeholder="Type your message here..."></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="Reset">
-                        </td>
-                    </tr>
-                </table>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" id="male" name="gender" value="male" checked> Male</label>
+                        <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+                        <label><input type="radio" id="other" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dept">Department</label>
+                    <select id="dept" name="department">
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="ece">Electronics & Communication</option>
+                        <option value="it">Information Technology</option>
+                        <option value="me">Mechanical Engineering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                    <input type="reset" value="Reset" class="btn btn-secondary">
+                </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p align="center">
+        <p>
             &copy; 2026 Pravallika Shivani. All Rights Reserved. <br>
             <strong>Academic Year:</strong> 2026 - 2027
         </p>

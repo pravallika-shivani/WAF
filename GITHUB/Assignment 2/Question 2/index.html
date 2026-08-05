@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova 2026 | Annual College Tech & Cultural Fest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION (FLEXBOX) -->
+  <header class="navbar">
+    <div class="logo">
+      <h2>Tech<span>Nova '26</span></h2>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#committee">Committee</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- EVENT BANNER (HERO) -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <span class="badge">Annual National Fest</span>
+      <h1>Innovate. Create. Elevate.</h1>
+      <p>Join us for 3 days of high-octane coding, robotics, cultural performances, and networking.</p>
+      <div class="hero-dates">📅 October 24–26, 2026 | 📍 Main Campus Auditorium</div>
+      <a href="#register" class="btn btn-primary">Register Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT THE EVENT -->
+  <section id="about" class="container">
+    <h2 class="section-title">About TechNova</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>TechNova is our flagship annual technical and cultural fest bringing together over 5,000 students from 100+ colleges across the country. Designed to spark innovation and showcase extraordinary talent, TechNova offers an immersive platform to compete, learn, and collaborate.</p>
+        <p>This year's theme, <strong>"Beyond Horizons,"</strong> focuses on artificial intelligence, green technology, and artistic expression.</p>
+        
+        <h3>Fest Highlights:</h3>
+        <ul class="styled-list">
+          <li>24-Hour Hackathon with cash prizes worth $10,000</li>
+          <li>Keynote sessions by industry leaders and tech innovators</li>
+          <li>Battle of the Bands and Pro-Nite Cultural Showcase</li>
+          <li>Esports tournament & Robotics Arena</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="TechNova Audience at Keynote Event">
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT SCHEDULE (TABLE) -->
+  <section id="schedule" class="container bg-surface">
+    <h2 class="section-title">Event Schedule</h2>
+    <div class="table-wrapper">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time Slot</th>
+            <th>Day 1 (Oct 24)</th>
+            <th>Day 2 (Oct 25)</th>
+            <th>Day 3 (Oct 26)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-col">09:00 AM - 11:00 AM</td>
+            <td>Inauguration & Keynote</td>
+            <td>RoboWars Round 1</td>
+            <td>Esports Semi-Finals</td>
+          </tr>
+          <tr>
+            <td class="time-col">11:30 AM - 02:00 PM</td>
+            <td>Hackathon Kickoff</td>
+            <td>Code Sprint Arena</td>
+            <td>Paper Presentation</td>
+          </tr>
+          <tr>
+            <td class="time-col">02:00 PM - 03:00 PM</td>
+            <td colspan="3" class="lunch-break">🍱 Lunch Break & Networking</td>
+          </tr>
+          <tr>
+            <td class="time-col">03:00 PM - 06:00 PM</td>
+            <td>Battle of the Bands</td>
+            <td>Cultural Dance Fest</td>
+            <td>Hackathon Judging</td>
+          </tr>
+          <tr>
+            <td class="time-col">06:30 PM Onwards</td>
+            <td>DJ Nite</td>
+            <td>Fashion Show</td>
+            <td>Grand Valedictory & Award Ceremony</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TECHNICAL & CULTURAL EVENTS (CSS GRID) -->
+  <section id="events" class="container">
+    <h2 class="section-title">Events & Competitions</h2>
+    <div class="events-grid">
+
+      <!-- Event 1 -->
+      <article class="event-card">
+        <div class="card-badge tech">Technical</div>
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Hackathon Event">
+        <div class="card-body">
+          <h3>24-Hr Hackathon</h3>
+          <p>Build scalable solutions for real-world problems in 24 continuous hours.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $5,000</span>
+            <span><strong>Team Size:</strong> 2-4</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for Hackathon</a>
+        </div>
+      </article>
+
+      <!-- Event 2 -->
+      <article class="event-card">
+        <div class="card-badge tech">Technical</div>
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80" alt="RoboWars Competition">
+        <div class="card-body">
+          <h3>RoboWars</h3>
+          <p>Custom combat robots clash in a custom-built arena for absolute supremacy.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $2,500</span>
+            <span><strong>Team Size:</strong> 1-5</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for RoboWars</a>
+        </div>
+      </article>
+
+      <!-- Event 3 -->
+      <article class="event-card">
+        <div class="card-badge tech">Technical</div>
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Code Sprint Competition">
+        <div class="card-body">
+          <h3>Code Sprint</h3>
+          <p>Fast-paced competitive programming contest testing algorithms and speed.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $1,200</span>
+            <span><strong>Team Size:</strong> Solo</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for Code Sprint</a>
+        </div>
+      </article>
+
+      <!-- Event 4 -->
+      <article class="event-card">
+        <div class="card-badge cultural">Cultural</div>
+        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" alt="Battle of the Bands">
+        <div class="card-body">
+          <h3>Battle of the Bands</h3>
+          <p>College rock and fusion bands go head-to-head live on the main stage.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $2,000</span>
+            <span><strong>Team Size:</strong> 3-8</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for Bands</a>
+        </div>
+      </article>
+
+      <!-- Event 5 -->
+      <article class="event-card">
+        <div class="card-badge cultural">Cultural</div>
+        <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80" alt="Choreography Dance Competition">
+        <div class="card-body">
+          <h3>Choreography Dance</h3>
+          <p>Group synchronization dance showcase featuring thematic performances.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $1,500</span>
+            <span><strong>Team Size:</strong> 6-16</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for Dance</a>
+        </div>
+      </article>
+
+      <!-- Event 6 -->
+      <article class="event-card">
+        <div class="card-badge cultural">Cultural</div>
+        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Esports Valorant & FIFA Tournament">
+        <div class="card-body">
+          <h3>Esports Championship</h3>
+          <p>LAN competition featuring Valorant, FIFA, and Rocket League tournaments.</p>
+          <div class="card-meta">
+            <span><strong>Prize Pool:</strong> $1,800</span>
+            <span><strong>Team Size:</strong> 1-5</span>
+          </div>
+          <a href="#register" class="btn btn-card">Register for Esports</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section id="register" class="container bg-surface">
+    <div class="form-wrapper">
+      <h2 class="section-title">Event Registration</h2>
+      <p class="form-subtitle">Fill out the form below to secure your entry pass for TechNova '26.</p>
+      
+      <form class="registration-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="college">College / University Name *</label>
+            <input type="text" id="college" name="college" placeholder="Institute of Technology" required>
+          </div>
+
+          <div class="form-group">
+            <label for="event-select">Primary Event *</label>
+            <select id="event-select" name="event-select" required>
+              <option value="" disabled selected>Select an event</option>
+              <option value="hackathon">24-Hr Hackathon (Technical)</option>
+              <option value="robowars">RoboWars (Technical)</option>
+              <option value="codesprint">Code Sprint (Technical)</option>
+              <option value="bands">Battle of the Bands (Cultural)</option>
+              <option value="dance">Choreography Dance (Cultural)</option>
+              <option value="esports">Esports Championship (Cultural)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year">
+              <option value="1">1st Year</option>
+              <option value="2">2nd Year</option>
+              <option value="3">3rd Year</option>
+              <option value="4">4th Year / Postgrad</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pass Type</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="pass" value="standard" checked>
+              Standard Pass (Events Only)
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="pass" value="vip">
+              VIP Pass (Events + Concert + Food Voucher)
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Special Requirements / Team Member Names</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Mention team members if participating in group events..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ORGANIZING COMMITTEE (FLEXBOX) -->
+  <section id="committee" class="container">
+    <h2 class="section-title">Organizing Committee</h2>
+    <div class="committee-flex">
+
+      <div class="committee-card">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Committee Chair">
+        <h3>Dr. Aris Thorne</h3>
+        <p class="role">Faculty Coordinator</p>
+        <p class="dept">Dept. of Computer Science</p>
+      </div>
+
+      <div class="committee-card">
+        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Student Head Tech">
+        <h3>Marcus Vance</h3>
+        <p class="role">Student Head (Technical)</p>
+        <p class="dept">Senior Year, B.Tech</p>
+      </div>
+
+      <div class="committee-card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Student Head Cultural">
+        <h3>Sophia Chen</h3>
+        <p class="role">Student Head (Cultural)</p>
+        <p class="dept">Senior Year, Design</p>
+      </div>
+
+      <div class="committee-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Logistics Lead">
+        <h3>David Miller</h3>
+        <p class="role">Logistics & Operations</p>
+        <p class="dept">Junior Year, Mech. Eng</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (FLEXBOX) -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-col">
+        <h3>TechNova '26</h3>
+        <p>Annual National Technical & Cultural Festival hosted by Apex Institute of Technology.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📍 Apex Campus, Tech Highway, Cityville</p>
+        <p>✉️ helpdesk@technovafest.org</p>
+        <p>📞 +1 (555) 987-6543</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="#social">Instagram</a></li>
+          <li><a href="#social">LinkedIn</a></li>
+          <li><a href="#social">YouTube</a></li>
+          <li><a href="#social">X (Twitter)</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechNova Organizing Committee. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

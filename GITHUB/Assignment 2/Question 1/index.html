@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookHaven | Your Ultimate Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>Book<span>Haven</span></h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#featured">Featured Books</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h2>Discover Your Next Great Read</h2>
+      <p>Explore thousands of books across all genres with fast delivery directly to your doorstep.</p>
+      <a href="#featured" class="btn btn-primary">Browse Featured</a>
+    </div>
+  </section>
+
+  <!-- BOOK CATEGORIES -->
+  <section id="categories" class="container">
+    <h2 class="section-title">Popular Categories</h2>
+    <div class="categories-list">
+      <div class="category-chip">Fiction</div>
+      <div class="category-chip">Sci-Fi & Fantasy</div>
+      <div class="category-chip">Technology</div>
+      <div class="category-chip">Biography</div>
+      <div class="category-chip">Business</div>
+      <div class="category-chip">Self-Help</div>
+    </div>
+  </section>
+
+  <!-- FEATURED BOOKS (GRID LAYOUT) -->
+  <section id="featured" class="container">
+    <h2 class="section-title">Featured Books</h2>
+    <div class="book-grid">
+      
+      <!-- Card 1 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80" alt="Book Cover - Clean Code">
+        <div class="card-body">
+          <h3>Clean Code</h3>
+          <p class="author">By Robert C. Martin</p>
+          <div class="card-footer">
+            <span class="price">$39.99</span>
+            <span class="rating">★ 4.8</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Book Cover - The Pragmatic Programmer">
+        <div class="card-body">
+          <h3>The Pragmatic Programmer</h3>
+          <p class="author">By Andrew Hunt & David Thomas</p>
+          <div class="card-footer">
+            <span class="price">$42.50</span>
+            <span class="rating">★ 4.9</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=400&q=80" alt="Book Cover - Atomic Habits">
+        <div class="card-body">
+          <h3>Atomic Habits</h3>
+          <p class="author">By James Clear</p>
+          <div class="card-footer">
+            <span class="price">$24.00</span>
+            <span class="rating">★ 4.9</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80" alt="Book Cover - Dune">
+        <div class="card-body">
+          <h3>Dune</h3>
+          <p class="author">By Frank Herbert</p>
+          <div class="card-footer">
+            <span class="price">$18.99</span>
+            <span class="rating">★ 4.7</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=400&q=80" alt="Book Cover - Deep Work">
+        <div class="card-body">
+          <h3>Deep Work</h3>
+          <p class="author">By Cal Newport</p>
+          <div class="card-footer">
+            <span class="price">$21.99</span>
+            <span class="rating">★ 4.6</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="book-card">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=400&q=80" alt="Book Cover - Sapiens">
+        <div class="card-body">
+          <h3>Sapiens</h3>
+          <p class="author">By Yuval Noah Harari</p>
+          <div class="card-footer">
+            <span class="price">$26.50</span>
+            <span class="rating">★ 4.8</span>
+          </div>
+          <button class="btn btn-card">Add to Cart</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BOOK DETAILS TABLE -->
+  <section class="container">
+    <h2 class="section-title">Book Details Overview</h2>
+    <div class="table-wrapper">
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean Code</td>
+            <td>Robert C. Martin</td>
+            <td>$39.99</td>
+            <td>4.8 / 5</td>
+          </tr>
+          <tr>
+            <td>The Pragmatic Programmer</td>
+            <td>Andrew Hunt, David Thomas</td>
+            <td>$42.50</td>
+            <td>4.9 / 5</td>
+          </tr>
+          <tr>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>$24.00</td>
+            <td>4.9 / 5</td>
+          </tr>
+          <tr>
+            <td>Dune</td>
+            <td>Frank Herbert</td>
+            <td>$18.99</td>
+            <td>4.7 / 5</td>
+          </tr>
+          <tr>
+            <td>Deep Work</td>
+            <td>Cal Newport</td>
+            <td>$21.99</td>
+            <td>4.6 / 5</td>
+          </tr>
+          <tr>
+            <td>Sapiens</td>
+            <td>Yuval Noah Harari</td>
+            <td>$26.50</td>
+            <td>4.8 / 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS -->
+  <section id="reviews" class="container">
+    <h2 class="section-title">What Our Readers Say</h2>
+    <div class="reviews-grid">
+      
+      <div class="review-card">
+        <p class="quote">"BookHaven is my go-to online store! The order delivery is super fast and the books arrive in pristine condition."</p>
+        <div class="reviewer">- Sarah M., Tech Enthusiast</div>
+      </div>
+
+      <div class="review-card">
+        <p class="quote">"Fantastic selection of books and seamless navigation. The pricing is very competitive."</p>
+        <div class="reviewer">- David K., Avid Reader</div>
+      </div>
+
+      <div class="review-card">
+        <p class="quote">"Customer support helped me track a rare technical book effortlessly. Highly recommended!"</p>
+        <div class="reviewer">- Elena R., Student</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="container">
+    <div class="form-wrapper">
+      <h2 class="section-title">Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Reason for contact" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER (FLEXBOX LAYOUT) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>BookHaven</h3>
+        <p>Your one-stop destination for quality books, knowledge, and inspiration.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#featured">Featured Books</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <p>Email: support@bookhaven.com</p>
+        <p>Phone: +1 (555) 019-2834</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BookHaven. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
